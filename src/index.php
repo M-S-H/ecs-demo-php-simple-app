@@ -7,7 +7,55 @@
         <title>Simple PHP App</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-        <style>body {margin-top: 40px; background-color: #333;}</style>
+        <style>
+            body {
+                margin-top: 40px;
+                background-color: #333;
+            }
+
+            body h2 {
+                color: blue;
+                transform-origin: top left;
+                animation: crazy 0.25s ease-in-out infinite;
+            }
+
+            @keyframes crazy {
+                0% {
+                    opacity: 1.0;
+                    transform: scale(3.0);
+                }
+                50% {
+                    opacity: 0.0;
+                    transform: scale(0.5);
+                }
+            }
+
+            h3 b {
+                text-transform: uppercase;
+                animation: colorchange 0.5s linear infinite;
+            }
+
+            @keyframes colorchange {
+                0% {
+                    color: blue;
+                }
+                20% {
+                    color: green;
+                }
+                40% {
+                    color: yellow;
+                }
+                60% {
+                    color: orange;
+                }
+                80% {
+                    color: red;
+                }
+                100% {
+                    color: purple;
+                }
+            }
+        </style>
         <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
         <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     </head>
@@ -15,7 +63,7 @@
     <body>
         <div class="container">
             <div class="hero-unit">
-                <h1>Simple PHP App</h1>
+                <h1>Simple PHP App - BOOM</h1>
                 <h2>Congratulations</h2>
                 <p>Your PHP application is now running on a container in Amazon ECS.</p>
                 <p>The container is running PHP version <?php echo phpversion(); ?>.</p>
@@ -24,7 +72,7 @@
                         echo fread($myfile,filesize("/var/www/my-vol/date"));
                         fclose($myfile);
                 ?>
-
+                <h3>AWS is built by <b>wizards</b>.
             </div>
         </div>
 
