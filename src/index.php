@@ -11,6 +11,8 @@
             body {
                 margin-top: 40px;
                 background-color: #333;
+                background-image: url('https://avatars0.githubusercontent.com/u/6133251?s=460&v=4');
+                background-repeat: repeat;
             }
 
             body h2 {
