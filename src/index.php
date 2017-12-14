@@ -24,11 +24,11 @@
             @keyframes crazy {
                 0% {
                     opacity: 1.0;
-                    transform: scale(3.0);
+                    transform: scale(3.0) rotate(0deg);
                 }
                 50% {
                     opacity: 0.0;
-                    transform: scale(0.5);
+                    transform: scale(0.5) rotate(-180deg);
                 }
             }
 
